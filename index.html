@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SBTL — Transforms Business | سبتل — تحول الأعمال</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* ─── TOKENS ─── */
 :root {
@@ -43,7 +43,9 @@ img { max-width:100%; display:block; }
 
 /* ─── BILINGUAL ─── */
 .ar { display:none; }
-body.rtl { direction:rtl; }
+body.rtl { direction:rtl; font-family:'Cairo', sans-serif; }
+body.rtl * { font-family:inherit; }
+body.rtl .h-lg, body.rtl .h-md { font-family:'Cairo', sans-serif; }
 body.rtl .en { display:none; }
 body.rtl .ar { display:revert; }
 body.rtl .en-i { display:none; }
