@@ -28,6 +28,14 @@
 }
 *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
 html { scroll-behavior:smooth; font-size:16px; }
+
+/* ─── CUSTOM SCROLLBAR ─── */
+::-webkit-scrollbar { width:8px; height:8px; }
+::-webkit-scrollbar-track { background:var(--c-dark); }
+::-webkit-scrollbar-thumb { background:var(--c-muted); border-radius:4px; border:2px solid var(--c-dark); }
+::-webkit-scrollbar-thumb:hover { background:var(--c-green); }
+::-webkit-scrollbar-corner { background:var(--c-dark); }
+* { scrollbar-width:thin; scrollbar-color:var(--c-muted) var(--c-dark); }
 body { font-family:var(--f-body); background:var(--c-dark); color:var(--c-white); overflow-x:hidden; -webkit-font-smoothing:antialiased; }
 a { text-decoration:none; color:inherit; }
 ul { list-style:none; }
